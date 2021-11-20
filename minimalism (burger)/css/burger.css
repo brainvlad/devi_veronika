@@ -6,6 +6,7 @@
 
 
 .burger-menu {
+    
     position: fixed;
     display: flex;
     align-items: flex-start;
@@ -32,7 +33,7 @@
 
 .burger-menu__button {
     margin-top: 10px;
-    z-index: 30;
+    z-index: 1000;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -40,13 +41,16 @@
     justify-content: center;
     align-items: center;
     align-items: center;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
     color: #282C2F;
     background: #fff;
     margin-left: 20px;
     font-size: 1.5rem;
-    border-radius: 0%;
+    border-radius: 50%;
     transition: all .3s;
+}
+.burger-menu__button:hover {
+    filter: invert();
 }
 
 .burger-menu__nav {
@@ -80,7 +84,7 @@
     align-items: flex-end;
     justify-content: center;
     gap: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-decoration: none;
     letter-spacing: 2px;

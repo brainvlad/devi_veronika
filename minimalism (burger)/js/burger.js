@@ -16,18 +16,14 @@ function burgerMenu(selector) {
         menu.toggleClass('burger-menu-active')
 
         if (menu.hasClass('burger-menu-active')) {
-            // $('body').css('overflow', 'hidden')
             $('.burger-menu__overlay').fadeIn(200)
+            // $("body").css("overflow", "hidden");
+            // $('body').css('margin-right', '16px')
         } else {
-            // $('body').css('overflow', 'visible')
             $('.burger-menu__overlay').fadeOut(100)
+            // $("body").css("overflow", "initial");
+            // $('body').css('margin-right', 'initial')
         }
-
-        // if (button.is(':visible')) {
-        //     button.hide(100)
-        // } else if (button.is(':hidden')) {
-        //     button.show();
-        // }
     }
 }
 
