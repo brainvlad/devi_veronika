@@ -28,12 +28,12 @@ function upd(val) {
 };
 
 upd(1);
-setTimeout(printNumbers, 2400, 100, 20);
-setTimeout(printNumbers, 3250, 30, 75);
+setTimeout(printDiafragma, 2400, 100, 20);
+setTimeout(printDiafragma, 3250, 30, 75);
 
 // addEventListener('mousemove', e => upd(e.y / innerHeight * 1.04));
 
-function printNumbers(from, to) {
+function printDiafragma(from, to) {
     let current = from;
 
     if (from > to) {
@@ -53,6 +53,6 @@ function printNumbers(from, to) {
             }
             upd(current / 100);
             current += 1;
-        }, 8);
+        }, 12);
     }
 }
