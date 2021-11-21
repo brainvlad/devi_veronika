@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+  
+}
+
+.container {
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: light-flash;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: */
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.error {
+    display: flex;
+    align-items: flex-end;
+}
+.error__title {
+    animation-name: error__title-animated;
+    animation-duration: 0.6s;
+    animation-timing-function:ease-out;
+    /* animation-iteration-count: */
+    /* animation-delay: ; */
+    animation-fill-mode: forwards;
+}
+.error__subtitle {
+    height: 200px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding-top: 15px;
+
+    animation-name: error__subtitle-animated;
+    animation-duration: 0.6s;
+    animation-timing-function:ease-out;
+    /* animation-iteration-count: */
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.title {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 38px;
+    line-height: 45px;
+    opacity: 0;
+
+    animation-name: text-up;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-out;
+    /* animation-iteration-count: */
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+.subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 15px;
+    opacity: 0;
+
+    animation-name: text-up;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-out;
+    /* animation-iteration-count: */
+    animation-delay: 1.0s;
+    animation-fill-mode: forwards;
+}
+.menu {
+    display: flex;
+   margin-top: 100px;
+
+   animation-name: menu-slide;
+   animation-duration: 0.8s;
+   animation-timing-function:ease-out;
+   /* animation-iteration-count: */
+   animation-delay: 1.3s;
+   animation-fill-mode: forwards;
+   gap: -0;
+   opacity: 0;
+
+ 
+}
+.menu__link {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #000;
+    transition: filter 0.3s;
+
+  
+}
+.menu__link:hover {
+    filter: opacity(0.6);
+}
+
+/* animations */
+
+@keyframes error__title-animated {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes error__subtitle-animated {
+    from {
+        opacity: 0;
+        transform: translateX(60px) rotate(180deg);
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(180deg);
+    }
+}
+
+@keyframes text-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes menu-slide {
+    from {
+        opacity: 0;
+        gap: 0px;
+        transform: translateY(20px);
+        gap: 0px;
+    }
+    50%{
+        opacity: 1;
+        gap: 0px;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        gap: 40px;
+    }
+}
+
+@keyframes light-flash {
+    from {
+        color: #fff;
+        opacity: 0;
+    }
+    to {
+        color: #000;
+        opacity: 1;
+    }
+}
