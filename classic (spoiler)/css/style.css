@@ -162,6 +162,7 @@ a::before {
     justify-content: center;
     align-items: center;
     height: fit-content;
+    height: 150px;
 }
 
 .footer {
