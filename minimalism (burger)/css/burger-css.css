@@ -1,0 +1,99 @@
+.burger-menu {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    transition: .3s;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn {
+    transform: translateX(320px);
+}
+
+#menu__toggle:checked ~ .menu__btn .fa-align-left {
+    display: none;
+}
+#menu__toggle ~ .menu__btn .fa-align-left {
+    display: block;
+}
+
+#menu__toggle:checked ~ .menu__btn .fa-times {
+    display: block;
+}
+#menu__toggle ~ .menu__btn .fa-times {
+    display: none;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    transform: translate(0px);
+}
+
+#menu__toggle:checked ~ .burger-menu__overlay {
+    display: block;
+}  
+
+.menu__btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;        
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px;
+    background-position: -3px 0;
+    color: #282C2F;
+    font-size: 22px;
+    background-color: #fff;
+    transition: .5s ease-out;
+}
+.menu__box {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1e1e1e;
+    overflow-y: auto;
+    /*left: -100%;*/
+    transform: translateX(-320px);
+
+    animation-delay: 0s;
+    transition: .5s ease-out;
+}
+.burger-menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.burger-menu__link {
+    width: 320px;
+    height: 70px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #eee;
+    transition: .3s;
+}
+.burger-menu__link:hover {
+    background-color: #444;
+} 

@@ -5,7 +5,6 @@ $(document).ready(function () {
             $("#dropdown").addClass('_active')
         } else {
             $(".dropdown__item").hide(200);
-            $(".dropdown__item").hide(200);
             $("#dropdown").removeClass('_active')
         }
     })

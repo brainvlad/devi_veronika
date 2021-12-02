@@ -29,7 +29,7 @@ function upd(val) {
 
 upd(1);
 setTimeout(printDiafragma, 2400, 100, 20);
-setTimeout(printDiafragma, 3250, 30, 75);
+setTimeout(printDiafragma, 3250, 20, 75);
 
 // addEventListener('mousemove', e => upd(e.y / innerHeight * 1.04));
 
@@ -38,7 +38,7 @@ function printDiafragma(from, to) {
 
     if (from > to) {
         let timerId = setInterval(function () {
-            console.log(current)
+            // console.log(current)
             if (current == to) {
                 clearInterval(timerId);
             }
@@ -47,7 +47,7 @@ function printDiafragma(from, to) {
         }, 8);
     } else {
         let timerId = setInterval(function () {
-            console.log(current)
+            // console.log(current)
             if (current == to) {
                 clearInterval(timerId);
             }
