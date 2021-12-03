@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <script src="js/dropmenu.js" defer></script>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
     <div class="main container">
         <div class="left-block">
             <div class="menu">
@@ -40,46 +41,33 @@
                 <a href="" class="menu-item">Контакты</a>
             </div>
         </div>
-        <div class="content">
-            <div class="gallery">
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-1.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-2.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-3.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-4.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-5.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-6.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-7.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-8.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-9.png" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/gallery/photo-10.png" alt="">
-                </div>
+        <div class="buttons">
+            <button class="slider-btn slider-prev"><i class="fas fa-backward"></i></button>
+            <button class="slider-btn slider-next"><i class="fas fa-forward"></i></button>
+            <div class="text">
+                мои работы
             </div>
         </div>
+        <div class="slider" style="">
+            <!-- <div class="slider-line"> -->
+            <img src="img/gallery/photo-1.png" draggable="false" alt="">
+            <img src="img/gallery/photo-2.png" draggable="false" alt="">
+            <img src="img/gallery/photo-3.png" draggable="false" alt="">
+            <img src="img/gallery/photo-4.png" draggable="false" alt="">
+            <img src="img/gallery/photo-5.png" draggable="false" alt="">
+            <img src="img/gallery/photo-6.png" draggable="false" alt="">
+            <img src="img/gallery/photo-7.png" draggable="false" alt="">
+            <img src="img/gallery/photo-8.png" draggable="false" alt="">
+            <!-- </div> -->
+        </div>
     </div>
+
     <footer class="footer">
         <div class="footer__copy container">
             &copy; Вероника Старкова 2021
         </div>
     </footer>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
