@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.main {
+    display: flex;
+    background-color: #CBD4DD;
+    height: 770px;
+    position: relative;
+}
+.menu {
+    flex: 3;
+    text-align: right;
+    padding-right: 100px;
+}
+.menu__title {
+    padding: 20px 0;
+}
+.menu__title h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 44px;
+}
+.menu__title h3 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+}
+.menu__nav {
+}
+.menu__item {
+    padding: 10px 0;
+    transition: transform .3s;
+    cursor: pointer;
+}
+.menu__item a{
+    height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+
+    text-decoration: none;
+    color: #000;
+
+}
+.menu__item:hover {
+    transform: translateX(10px);
+}
+.title {
+    padding: 20px 40px;
+    flex: 5;
+    background-color: #fff;
+    height: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: right;
+}
+.description {
+    height: 200px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    width: 55%;
+    padding: 20px 0 0 100px;
+}
+
+.footer {
+    padding-right: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100px;
+    text-align: right;
+    width: 100%;
+    background-color: #CBD4DD;
+    height: 100px;
+}
+
+.parallax__item-2 {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.parallax__item-1 {
+    position: absolute;
+    top: 10%;
+    left: 39%;
+}
